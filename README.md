@@ -12,10 +12,11 @@ Defaults are tun0 network adapter IP for LHOST and 443 for LPORT.  If you have a
 
 Each option has a default, if you just hit enter through all the prompts it will give you a shell.exe, and if you choose option 10 on the first screen, and enter through the rest it will give you an elf file.  Display the output to the terminal if you need to get shellcode. 
 ```bash
-python3 shells.py
+# uses tun0 and 443 as defaults
+shells
 ```
 ```bash
-python3 shells.py 10.10.255.254 9001
+shells 10.10.255.254 9001
 ```
 
 ## Example
