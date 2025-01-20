@@ -4,17 +4,9 @@ This repository is a helper script for msfvenom and msfconsole because I am lazy
 ## Installation
 No installation requirements other than metasploit, but for maximum fun I would create an alias:  
 ```bash
-alias "shells=/path/to/shells.py"
+python3 setup.py
 ```
-Optionally you can create a custom ssl key by doing this:
-```bash
-sudo mkdir /key
-USER=$(whoami)
-sudo chown $USER:$USER /key
-cd /key
-openssl req -new -x509 -nodes -out cert.crt -keyout priv.key
-cat priv.key cert.crt > custom.pem
-```
+
 ## Usage
 Defaults are tun0 network adapter IP for LHOST and 443 for LPORT.  If you have an active network adapter you do not need to pass args.
 
